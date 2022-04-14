@@ -1,5 +1,5 @@
 <?php
-include "connection.php";
+include "Koneksi.php";
 ?>
 <!doctype html>
 <html lang="en">
@@ -56,7 +56,7 @@ include "connection.php";
             $('#id_provinsi').on('change', function() {
                 var id_provinsi = $(this).val();
                 $.ajax({
-                    url: 'get_wilayah.php',
+                    url: 'Kabkota.php',
                     type: "POST",
                     data: {
                         modul: 'Kabupaten',
